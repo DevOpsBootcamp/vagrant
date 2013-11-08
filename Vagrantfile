@@ -9,7 +9,10 @@ Vagrant.configure("2") do |config|
   config.vm.hostname  = "devops-bootcamp.osuosl.org"
   config.vm.box_url   = "#{box_url}"
   config.vm.network "forwarded_port", guest: 80, host: 8080, auto_correct: true
-
-  # Boot with a GUI so you can see the screen. (Default is headless)
-  # config.vm.boot_mode = :gui
+  config.vm.provider :virtualbox do |vb|
+    # uncomment to enable GUI console
+    #vb.gui = "true"
+    # uncomment to disable hardware virt
+    #vb.customize ["modifyvm", :id, "--hwvirtex", "off"]
+    end
 end
