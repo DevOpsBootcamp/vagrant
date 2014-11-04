@@ -1,6 +1,7 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby tabstop=2 :
-box_url = "http://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_centos-6.6_chef-provisionerless.box"
+box_ver = "20131003"
+box_url = "http://ftp.osuosl.org/pub/osl/vagrant/centos-6-#{box_ver}.box"
 
 Vagrant.configure("2") do |config|
   # Every Vagrant virtual environment requires a box to build off of.
