@@ -4,7 +4,6 @@ box_url = "http://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_c
 
 Vagrant.configure("2") do |config|
   # Every Vagrant virtual environment requires a box to build off of.
-  config.vm.box       = "centos-6-#{box_ver}"
   config.vm.hostname  = "devops-bootcamp.osuosl.org"
   config.vm.box_url   = "#{box_url}"
   config.vm.network "forwarded_port", guest: 80, host: 8080, auto_correct: true
