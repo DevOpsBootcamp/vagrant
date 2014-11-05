@@ -29,6 +29,17 @@ $ vagrant up
 $ vagrant ssh           # to get into your VM
 ```
 
+32 bit Virtual Machine
+----------------------
+If you are having trouble using the default Vagrantfile because it uses a 64
+bit VM, there is a 32 bit VM available. Simply enter the directory named
+`32bit` by running:
+```sh
+$ cd 32bit
+```
+Then, continue as normal.
+
+
 Troubleshooting
 ---------------
 
