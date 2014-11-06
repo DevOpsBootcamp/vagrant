@@ -6,6 +6,7 @@ Vagrant.configure("2") do |config|
   # Every Vagrant virtual environment requires a box to build off of.
   config.vm.hostname  = "devops-bootcamp.osuosl.org"
   config.vm.box_url   = "#{box_url}"
+  config.vm.box = "centos-6.6"
   config.vm.network "forwarded_port", guest: 80, host: 8080, auto_correct: true
   config.vm.network "forwarded_port", guest: 5000, host: 5050, auto_correct: true
   config.vm.provider :virtualbox do |vb|
