@@ -38,21 +38,6 @@ $ vagrant ssh   # to get into your VM
 
 ```
 
-32 bit Virtual Machine
-----------------------
-
-If you are having trouble using the default ``Vagrantfile`` because it uses a 64 bit VM, there is a 32 bit VM
-available.  Simply enter the directory named ``32bit`` by running:
-
-``` console
-# Start a CentOS 32bit VM
-$ cd 32bit
-$ vagrant up    # Download image and start VM
-$ vagrant ssh   # to get into your VM
-```
-
-Then, continue as normal.
-
 Troubleshooting
 ---------------
 

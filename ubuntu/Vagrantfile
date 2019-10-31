@@ -11,5 +11,5 @@ Vagrant.configure("2") do |config|
     #vb.gui = "true"
     # uncomment to disable hardware virt
     #vb.customize ["modifyvm", :id, "--hwvirtex", "off"]
-    end
+  end
 end
